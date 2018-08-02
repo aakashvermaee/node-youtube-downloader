@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Parcel</title>
+    <link href="../resources/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id='vidId'>
+      <p>
+        <span>Enter Video Id/URL</span>
+      </p> &nbsp;
+      <input id='videoId' />
+      <!-- Make this as disabled after writing clipboard access code -->
+      <!-- <input id='videoId' disabled="true"/> -->
+    </div>
+    <hr />
+    <div class='controls'>
+      <button id='clear'>Clear</button>
+      <button id='past'>Paste</button>
+      <button id='dwndVideo'>Download As Video</button>
+      <button id='dwndAudio'>Download As Audio</button>
+      <button id='submit'>Submit</button>
+    </div>
+    <hr />
+    <div id='player'>
+      <div id='player-1'></div>
+    </div>
+
+  </body>
+  <script src="./index.js" async="true"></script>
+
+</html>

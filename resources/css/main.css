@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+#vidId>p>span {
+  font-family: 'Open Sans', sans-serif;;
+  font-size: 18px;
+  float: left;
+}
+
+#vidId>input {
+  width: 80%;
+  height: 18px;
+  font-family: 'Open Sans', sans-serif;;
+  font-size: 18px;
+}
+
+.controls>button {
+  height: 25px;
+}
+
+/* #player-1 {
+  width: 1080px;
+  height: 720px;
+} */
