@@ -40,11 +40,14 @@ const dwndVideo = (id) => {
     const videoIdOrUrl = jq(id).val();
     console.log(videoIdOrUrl);
     downloadVideo(videoIdOrUrl)
-      .then((videoInfo) => {})
+      .then((videoIdOrUrl) => {
+        console.log(JSON.stringify(videoIdOrUrl));
+      })
       .catch((err) => {})
   }
 }
 
+// todo: write code to download YouTube video as audio
 const dwndAudio = (id) => {
   console.log(jq(id).val());
 }
