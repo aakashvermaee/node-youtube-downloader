@@ -25,5 +25,5 @@ app.use(function (req, res, next) {
 });
 
 app.listen(PORT, () => {
-  console.log(`app running on PORT: ${PORT}`)
+  console.log(`app running on PORT: ${PORT}`);
 });
