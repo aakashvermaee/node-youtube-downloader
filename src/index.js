@@ -16,7 +16,7 @@ jquery('#submit, #clear, #dwndVideo, #dwndAudio').click((e) => {
   controls.factory(e.target.id, videoIdInput);
 });
 
-// CORS HEADERS
+// *CORS HEADERS
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, x-auth, Content-Type, Accept");
