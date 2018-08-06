@@ -41,9 +41,17 @@ const dwndVideo = (id) => {
     console.log(videoIdOrUrl);
     downloadVideo(videoIdOrUrl)
       .then((videoIdOrUrl) => {
-        console.log(JSON.stringify(videoIdOrUrl));
+        displayVideoInfo(videoIdOrUrl, function () {
+          console.log(videoIdOrUrl);
+        });
       })
       .catch((err) => {})
+  }
+}
+
+function displayVideoInfo(videoIdOrUrl, cb) {
+  if (typeof cb === 'function') {
+    cb();
   }
 }
 
